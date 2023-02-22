@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment2:Tranformtion and Transition</title>
+        <style>
+            div.a {
+            width: 150px;
+            height: 80px;
+            background-color: cadetblue;
+            -ms-transform: rotate(25deg); 
+            transform: rotate(25deg);
+            }
+            div.b {
+            width: 150px;
+            height: 80px;
+            background-color: cadetblue;
+            -ms-transform: skewY(20deg); 
+            transform: skewY(20deg);
+           }
+           div.c {
+           width: 150px;
+           height: 80px;
+            background-color: cadetblue;
+           -ms-transform: scaleY(1.5);
+           transform: scaleY(1.5);
+           }
+           div.d{
+            width: 300px;
+            height: 100px;
+            background-color: cadetblue;
+            border: 1px solid black;
+            transform: translate(50px,100px);
+           }
+           div.e{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            transition: width 2s, height 2s, transform 2s;
+           }
+           div.e:hover{
+            width: 100px;
+            height: 100px;
+            transform: skew(25deg);
+           }
+           div.f{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            transition: width 2s, height 2s, transform 2s;
+           }
+           div.f:hover{
+            width: 100px;
+            height: 100px;
+            transform: scale(1.5);
+
+           }
+           div.g{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            transition: width 2s, height 2s, transform 2s;
+           }
+            div.g:hover{
+            width: 100px;
+            height: 100px;
+            transform: rotate(100deg);
+           }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: orangered">First we discuss about the transform Property</h1>
+        <p style="color: brown">The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, skew, etc., elements.</p>
+        <h2>transform: rotate(25deg):</h2>
+        <div class="a">Using tranform property.</div><br>
+        <h2>tranform:skew(20deg)</h2>
+        <div class="b">Using tranform property.</div>
+        <br>
+        <h2>transform: scaleY(2.5):</h2>
+        <div class="c">Using tranform property.</div>
+        <h2>The translate() Method</h2>
+        <p>The translate() method moves an element from its current position:</p>
+        <div class="d">
+        This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+        </div>
+        <br><br>
+        <br><br><br>
+        <h1 style="color: orangered">Now we will be displaying the Transition Property of CSS along with above tranform effects.</h1>
+        <p style="color: brown">CSS transitions allows you to change property values smoothly, over a given duration.</p>
+        <p>We can see the transition effect with transfrom effect when we hover over the element:</p>
+        <div class="e"></div><hr><br>
+        <div class="f"></div><hr><br>
+        <div class="g"></div><hr><br>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>CSS Assignmnet2</title>
+    <link rel="stylesheet" href="styleAssignment2.css">
+</head>
+  
+<body>
+    <h3 style="text-align: center;">Demo showing difference between rem,emvh,vw,px: </h3>
+    <p>
+        <b>px:</b><br>
+        It defines the font-size in terms of pixels. <br>
+        <b>%:</b><br>
+        The % unit is used to set the font-size relative to the current font-size. 
+    </p>
+    <h3>Case-1</h3>
+    <div class="box fifty-percent">50%</div>
+    <div class="box one-hundred">100px</div>
+    <hr>
+    <h3>Case-2 </h3>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred">100px</div>
+    </div>
+    <h3>These cases shows the use of vw,vh</h3>
+    <p><b>vw:</b><br> Relative to 1% of the width of the viewport. <br>
+    <b>vh:</b><br>
+    Relative to 1% of the height of the viewport. </p>
+    <h3>Case-1 </h3>
+    <div class="box2 fifty-percent">50%</div>
+    <div class="box2 fifty-vw">50vw</div>
+    <div class="box2 twenty-five-vh">25vh</div>
+    <hr>
+    <h3>Case-2 </h3>
+    <div class="parent2">
+        <div class="box2 fifty-percent">50%</div>
+        <div class="box2 fifty-vw">50vw</div>
+        <div class="box2 twenty-five-vh">25vh</div>
+    </div>
+    <h3>These cases shows the use of em,rem</h3>
+    <p><b>em:</b><br>It is used to set the relative size. It is relative to the font-size of the element. <br>
+    <b>rem:</b><br>
+    Relative to the browser base font-size. </p>
+    <h3>Case-1</h3>
+    <div class="one-rem">1rem</div>
+    <div class="one-em">1em</div>
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+    <hr>
+    <h3>Case-2</h3>
+    <div class="parent3">
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+    </div>
+    <h3 style="text-align: center;">Demo for showing CSS Combinators: </h3>
+        <p>
+        A combinator is something that explains the relationship between the selectors.A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.There are four different combinators in CSS:
+            <ul>
+                <li>Descendant selector (space)</li>
+                <li>Child selector (>)</li>
+                <li>Adjacent sibling selector (+)</li>
+                <li>General sibling selector (~)</li>
+            </ul>
+        </p>
+        <h2>Child Selector</h2>
+        <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+        <div class="child">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section>
+              <!-- not Child but Descendant -->
+              <p>Paragraph 3 in the div (inside a section element).</p>
+            </section>
+            <p>Paragraph 4 in the div.</p>
+        </div>
+        <h2>Adjacent Sibling Selector</h2>
+        <p>The + selector is used to select an element that is directly after another specific element.</p>
+        <div class="adjacent_sibling">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+        <h2>General Sibling Selector</h2>
+        <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+        <p>Paragraph 1.</p>
+        <div class="general_sibling">
+        <p>Paragraph 2.</p>
+        </div>
+        <p>Paragraph 3.</p>
+        <p>Paragraph 4.</p>
+</body>
+  
+</html>
